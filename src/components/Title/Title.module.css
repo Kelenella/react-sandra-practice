@@ -7,15 +7,13 @@
   display: flex;
   flex-direction: column;
   font-size: mainFs;
+  text-align: center;
 }
 
-:global(.titleWrapper) {
-  /* border: 2px solid red; */
-}
-.title::after {
+/* .title::after {
   content: '';
   display: block;
   width: 60px;
   height: 20px;
   background-color: #000;
-}
+} */

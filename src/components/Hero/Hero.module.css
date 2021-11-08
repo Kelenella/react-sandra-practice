@@ -1,0 +1,7 @@
+.styledImg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0px auto 30px;
+  grid-template-columns: inherit;
+}

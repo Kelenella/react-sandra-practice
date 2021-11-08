@@ -4,21 +4,22 @@ import img3 from '../../images/img3.jpeg';
 import img4 from '../../images/img4.jpeg';
 import img5 from '../../images/img5.jpeg';
 import img6 from '../../images/img6.jpeg';
+import s from './Hero.module.css';
 
 import { Icons } from '../Icons';
 
 export function Hero() {
   return (
     <>
-      <div>
+      <div className={s.styledImg}>
         <a href="/">
-          <Icons
+          {/* <Icons
             width="32"
             name="spotify-icon"
             className="meSvg"
             color="orange"
           />
-          <Icons width="32" name="mail-icon" className="meSvg" color="orange" />
+          <Icons width="32" name="mail-icon" className="meSvg" color="orange" /> */}
           <Icons
             width="32"
             name="youtube-icon"
@@ -27,7 +28,7 @@ export function Hero() {
           />
         </a>
       </div>
-      <div>
+      <div className={s.styledImg}>
         <img src={img1} alt={'some images'} width={150} />
         <img src={img2} alt={'some images'} width={150} />
         <img src={img3} alt={'some images'} width={150} />
