@@ -1,0 +1,21 @@
+@value mainFs from "../../styles/variables.module.css";
+
+/* модульность распространяется только 
+на селекторы классов */
+
+.title {
+  display: flex;
+  flex-direction: column;
+  font-size: mainFs;
+}
+
+:global(.titleWrapper) {
+  /* border: 2px solid red; */
+}
+.title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 20px;
+  background-color: #000;
+}

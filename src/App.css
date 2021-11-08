@@ -1,0 +1,27 @@
+:root {
+  --accent-color: rgb(118, 118, 209);
+}
+body {
+  background: var(--accent-color);
+}
+ul {
+  list-style: none;
+}
+h1 {
+  position: relative;
+  text-align: center;
+  color: #353535;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 18px;
+  color: #676767;
+}
+
+/* #bsBtn {
+  background-color: blue;
+} */

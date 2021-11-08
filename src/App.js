@@ -1,28 +1,29 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from 'react-bootstrap';
 import './App.css';
+
 import { Gallery } from './components/Gallery/Gallery';
+import { Hero } from './components/Hero/Hero';
 import Title from './components/Title/Title';
+import array from './db/gallery.json';
 
 const galleryImages = {
   title: 'Images',
   description: 'Best images in the World',
-  images: [
-    {
-      id: '1',
-      src: 'https://mfair.ua/user/cars/51859/51859-kupit-kupe-lotus-exige-s-kiev-2018-3.jpg',
-    },
-    {
-      id: '2',
-      src: 'https://cdn.motor1.com/images/mgl/Q1jNY/s3/lotusemirafront3qtrportrait.jpg',
-    },
-  ],
+  images: array,
 };
-
+// const newStyleBtn = {
+//   color: 'white',
+//   background: 'black',
+// };
 const { title, description, images } = galleryImages;
 
 function App() {
   return (
-    <div className="App">
-      FE 35 Module 1 Lesson 1
+    <div className={'App'}>
+      <h1>FE 35 Module 1 Lesson 1 Lesson 2</h1>
+      <Hero />
+      <Button variant="outline-success">Success</Button>
       <Gallery description={description} images={images}>
         {/* IF */}
         {title === 'Images' && <Title value={title} />}
